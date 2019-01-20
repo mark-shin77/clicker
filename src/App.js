@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Wrapper from "./components/Wrapper"
 import Header from "./components/Header";
 import Jumbotron from './components/Jumbotron';
-import Content from "./components/Content"
 import Card from "./components/Card";
 import cards from "./cards.json";
 import './App.css';
@@ -11,7 +10,7 @@ class App extends Component {
   // Bringing in the cards.json and setting it's initial state
   state = {
     cards,
-    rightWrong: "",
+    rightWrong: "Click on any picture to get started!",
     score: 0,
     highscore: 0
   }
@@ -34,8 +33,8 @@ class App extends Component {
   }
 
   clickCount = id => {
-    this.state.cards.find((o, i) => {
-      if ( o.id === id ) {
+    this.state.cards.find((selected, i) => {
+      if ( selected.id === id ) {
         if ( cards[i].count === 0 ) {
           cards[i].count += 1
           this.setState({ score : this.state.score + 1 , rightWrong : "Nice job! Keep going!"}, function(){
@@ -56,19 +55,12 @@ class App extends Component {
     return (
       <div className="container-fluid">
         <Header rightWrong={this.state.rightWrong} score={this.state.score} highscore={this.state.highscore}/>
-        <Jumbotron></Jumbotron>
-        <Wrapper>
-          <div className="instructions">
-            <h4>Click on any member of the Aug 2018 bootcamp to earn a point, but don't click on the same picture more than once. Click all 18 pics, and you win.</h4>
-          </div>
-        <Content>
-            {this.state.cards.map (card => (
-              <Card  clickCount={this.clickCount} id={card.id} name={card.name} key={card.id} image={card.image} />
-            ))}
-        
-        </Content>
-
-        </Wrapper>
+          <Jumbotron></Jumbotron>
+          <Wrapper>
+              {this.state.cards.map (card => (
+                <Card  clickCount={this.clickCount} id={card.id} name={card.name} key={card.id} image={card.image} />
+              ))}
+          </Wrapper>
       </div>
     );
   }
