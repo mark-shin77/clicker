@@ -4,8 +4,10 @@ import "./Wrapper.css";
 const Wrapper = props => {
     return (
         <div className="wrapper">
-            {props.children}
+            <div className="game-board">
+                {props.children}
             </div>
+        </div>
     )
 }
 

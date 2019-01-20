@@ -40,7 +40,7 @@ class App extends Component {
           this.setState({ score : this.state.score + 1 , rightWrong : "Nice job! Keep going!"}, function(){
             console.log(this.state.score);
           });
-          this.state.cards.sort(() => Math.random() - 1);
+          this.state.cards.sort(() => Math.random() - .75);
           return true;
         } else if (this.state.score === 18) {
           this.setState({ rightWrong : "Winner Winner!"})
