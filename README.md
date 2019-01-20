@@ -1,68 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Clickster
+### Overview
+The Clickster is a web game application where users click images of adorable puppies in order to earn points. You win the game whenever you have clicked all 9 of the puppies. The only catch is that the puppies move in their location with every click...
 
-## Available Scripts
+### Technologies Used:
+- React.js- UI
+- Bootstrap- CSS framework
+About the Code
 
-In the project directory, you can run:
+### Getting Started
+First thing I did was create the React Client-side boilerplate by typing create-react-app Clicky-game in the command line. Next, I changed into that directory by typing 'cd Clicky-game' in the terminal. After that I typed yarn start to open the app in the browser.
 
-### `npm start`
+Starting to Code
+Create-react-app gives you a public folder with a basic index.html page, some basic css for the react template, an App.js file, index.js file, and some other boilerplate files. I only had to alter two things in the index.html page: the title of my app and include a Bootstrap CDN link. I either altered or completely changed the rest of the files, adding my own style. The bulk of the code for this app was done in the src/components directory. I decided to make three total components for my app, however, it could have been made with much more or probably less.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Components
+- Card
+The card component is where the puppy images are displayed.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- Score
+The score component is where the score is displayed.
 
-### `npm test`
+- Wrapper
+The Wrapper component wraps the card component.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I chose not to do a separate header component but it could be done. In fact, you could have the header component include some of the score details.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The clickster can be found on Heroku here
+The Clickster Designer and Programmer: Heather Mathies with help from UCF Bootcamp and her friends.
