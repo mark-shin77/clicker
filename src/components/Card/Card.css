@@ -37,3 +37,9 @@
     font-size: 15px;
 }
 
+@media only screen and (max-width: 450){
+    .card {
+        margin: .5rem;
+        width: 85px;
+    }
+}

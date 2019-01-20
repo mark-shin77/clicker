@@ -1,0 +1,37 @@
+@media only screen and (max-width: 450px){
+    .card {
+        margin: .5rem;
+        width: 85px;
+    }
+    .game-board {
+        width: 100%;
+    }
+    .jumbotron {
+        height: 120px;
+        width: 118%;
+        margin-top: -10px;
+        margin-left: -41px;
+    }
+    .wrapper {
+        margin-top: -45px;
+    }
+    .scores {
+        width: 50%;
+        text-align: center;
+    }
+    .title {
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .header {
+        font-weight: 100;
+        width: 109%;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        background-color: rgb(54, 54, 54);
+        color: white;
+        padding: 1rem;
+        margin-left: -15px;
+    }
+}
